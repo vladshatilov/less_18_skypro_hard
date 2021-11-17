@@ -1,0 +1,31 @@
+GET http://127.0.0.1:5000/movies/1
+Accept: application/json
+
+<> 2021-11-17T220622.200.json
+<> 2021-11-17T220616.200.json
+<> 2021-11-17T220602.200.json
+
+###
+
+DELETE http://127.0.0.1:5000/movies/2
+Content-Type: application/json
+
+<> 2021-11-17T220640.500.json
+
+###
+
+PUT http://127.0.0.1:5000/movies/1
+Accept: text/plain
+Content-Type: application/json
+
+{
+  "description": "Наследник Пол отправляется из Вселенной. Здесь нет ничего. В результате это становится началом его испытаний",
+  "director_id": 2,
+  "genre_id": 11,
+  "rating": 2.4,
+  "title": "Crrrreek",
+  "trailer": "https://www.youtube.com/watch?me",
+  "year": 2022
+}
+
+<> 2021-11-17T220837.201.json
